@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Received Transactions</title>
+</head>
+<body>
+    <h1>Received Transactions</h1>
+    <ul>
+        {% for transaction in received_transactions %}
+            <li>{{ transaction.IName }} - {{ transaction.Order }} - {{ transaction.Date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

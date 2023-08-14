@@ -1,0 +1,1436 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {% static 'css/Managment1.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>My Webpage</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="logo">
+            <img src="{% static 'img/SopeonowLogo.jpeg' %}" alt="Logo">
+            <span class="logo-text">Managment Live</span>
+            <div class="home-icon">
+                <img src="{% static 'img/house.png' %}" alt="Home">
+                <span class="home-text">Home</span>
+            </div>
+            <div class="Admission-logo">
+                <img src=" {% static 'img/id-card.png' %}" alt="Admission">
+                <span class="Admission-text">Admission</span>
+            </div>
+            <div class="Arrow-logo">
+                <img src="{% static 'down-chevron.png' %}" alt="Down-Arrow">
+            </div>
+            <div class="circle"></div>
+        </div>
+
+    </header>
+    <div class="hamburger-box">
+        <img src="{% static 'img/icons8-search-500.png' %}" alt="Hamburger Icon" 
+             style="width: 29%; height: 3%; margin-left:32px; margin-top:25%;">
+        <img src="{% static 'img/icons8-funnel-50.png' %}" alt="Hamburger Icon" 
+             style="width: 29%; height: 3%; margin-left:32px; margin-top:49%;">
+        <img src="{% static 'img/icons8-paid-bill-50.png ' %}" alt="Hamburger Icon" 
+             style="width: 29%; height: 3%; margin-left:32px; margin-top:43%;">
+        <img src="{% static 'img/icons8-hospital-wagon-without-a-siren-50.png' %}" alt="Hamburger Icon" 
+             style="width: 29%; height: 3%; margin-left:32px; margin-top:30%;">
+        <img src="{% static 'img/icons8-hospital-wagon-without-a-siren-50 (1).png' %}" alt="Hamburger Icon" 
+             style="width: 29%; height: 3%; margin-left:32px; margin-top:30%;">
+        <img src="{% static 'img/icons8-tooth-stethoscope-64.png' %}" alt="Hamburger Icon" 
+             style="width: 29%; height: 3%; margin-left:32px; margin-top:30%;">
+        <img src="{% static 'img/icons8-stethoscope-64.png' %}" alt="Hamburger Icon" 
+             style="width: 29%; height: 3%; margin-left:32px; margin-top:30%;">
+        <img src="{% static 'img/icons8-hospital-80.png' %}" alt="Hamburger Icon" 
+             style="width: 29%; height: 3%; margin-left:32px; margin-top:30%;">
+        <img src="{% static 'img/icons8-medical-bag-50.png' %}" alt="Hamburger Icon" 
+             style="width: 29%; height: 3%; margin-left:32px; margin-top:35%;">
+        <img src="{% static 'img/icons8-world-50.png' %}" alt="Hamburger Icon" 
+             style="width: 29%; height: 3%; margin-left:32px; margin-top:30%;">
+        <img src="{% static 'img/icons8-polyline-64.png' %}" alt="Hamburger Icon" 
+             style="width: 29%; height: 3%; margin-left:32px; margin-top:30%;">
+        <img src="{% static 'img/icons8-path-50.png' %}" alt="Hamburger Icon" 
+             style="width: 29%; height: 3%; margin-left:32px; margin-top:30%;">
+        <img src="{% static 'img/icons8-combo-chart-50 (1).png' %}" alt="Hamburger Icon" 
+             style="width: 29%; height: 3%; margin-left:32px; margin-top:30%;">
+    </div>
+    <main>
+        <div class="additional-box">
+            <p>Key Metrics</p>
+        </div>
+        <div class="second-box">
+            <p>Queue to Registration</p>
+            <p style="font-family: Roboto, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: rgba(51, 51, 51, 1);;
+            width: 192px;
+            height: 28px;
+            position: absolute;
+            top: 13px;
+            margin-left: 15px;
+            display: flex;
+            justify-content: left;">Registration Time</p>
+            <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 17px;
+                                                      height: 17px;
+                                                      position: absolute;
+                                                      top: 39px;
+                                                      left: 383.5px;">
+            <p style="font-family: Roboto;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 35px;
+            letter-spacing: 0em;
+            margin-top: -1%;
+            text-align: left;
+            color: rgba(255, 100, 100, 1);
+            padding-left: 417px;">02:34</p>
+        </div>
+        <div class="third-box">
+            <p>Registration to triage</p>
+            <p style="font-family: Roboto, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: rgba(51, 51, 51, 1);;
+            width: 192px;
+            height: 28px;
+            position: absolute;
+            top: 13px;
+            margin-left: 15px;
+            display: flex;
+            justify-content: left;">Time to Triage</p>
+            <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 17px;
+                                                      height: 17px;
+                                                      position: absolute;
+                                                      top: 39px;
+                                                      left: 383.5px;">
+            <p style="font-family: Roboto,;
+                                                      font-size: 30px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -1%;
+                                                      text-align: left;
+                                                      color: rgba(92, 177, 118, 1);;
+                                                      padding-left: 417px;">00:34</p>
+        </div>
+        <div class="fourth-box">
+            <p>Triage to Consult</p>
+            <p style="font-family: Roboto, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: rgba(153, 153, 153, 1);
+            width: 192px;
+            height: 28px;
+            position: absolute;
+            top: 13px;
+            margin-left: 15px;
+            display: flex;
+            justify-content: left;">Time to Consult</p>
+            <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 17px;
+                                                      height: 17px;
+                                                      position: absolute;
+                                                      top: 39px;
+                                                      left: 383.5px;">
+            <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 30px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -1%;
+                                                      text-align: left;
+                                                      color: rgba(92, 177, 118, 0.7);;
+                                                      padding-left: 417px;">00:34</p>
+        </div>
+        <div class="fifth-box">
+            <p style="width:25%">Triage End to Discharge</p>
+            <p style="font-family: Roboto, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: rgba(153, 153, 153, 1);
+            width: 192px;
+            height: 28px;
+            position: absolute;
+            top: 13px;
+            margin-left: 15px;
+            display: flex;
+            justify-content: left;">In Zone Time</p>
+            <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 17px;
+                                                      height: 17px;
+                                                      position: absolute;
+                                                      top: 39px;
+                                                      left: 383.5px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 30px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -1%;
+                                                      text-align: left;
+                                                      color: rgba(255, 100, 100, 0.7);
+                                                      padding-left: 417px;">02:34</p>
+        </div>
+        <div class="sixth-box">
+            <p style="width:25%">Consultation to Discharge</p>
+            <p style="font-family: Roboto, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: rgba(153, 153, 153, 1);
+            width: 192px;
+            height: 28px;
+            position: absolute;
+            top: 13px;
+            margin-left: 15px;
+            display: flex;
+            justify-content: left;">Treatment Time</p>
+            <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 17px;
+                                                      height: 17px;
+                                                      position: absolute;
+                                                      top: 39px;
+                                                      left: 383.5px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 30px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -1%;
+                                                      text-align: left;
+                                                      color: rgba(255, 100, 100, 0.7);
+                                                      padding-left: 417px;">02:34</p>
+        </div>
+        <div class="seventh-box">
+            <p style="width:45%">Lab Order Request to Processing</p>
+            <p style="font-family: Roboto, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: rgba(153, 153, 153, 1);
+            width: 192px;
+            height: 28px;
+            position: absolute;
+            top: 13px;
+            margin-left: 10px;
+            display: flex;
+            width:45%;">Lab Processing Time</p>
+            <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 17px;
+                                                      height: 17px;
+                                                      position: absolute;
+                                                      top: 39px;
+                                                      left: 383.5px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 30px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -1%;
+                                                      text-align: left;
+                                                      color: rgba(255, 100, 100, 0.7);
+                                                      padding-left: 417px;">02:34</p>
+        </div>
+        <div class="eight-box">
+            <p style="width:50%">Radiology Order Request to Processing</p>
+            <p style="font-family: Roboto, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: rgba(153, 153, 153, 1);
+            width: 192px;
+            height: 28px;
+            position: absolute;
+            top: 13px;
+            margin-left: 10px;
+            display: flex;
+            width:60%;">Radiology Processing Time</p>
+            <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 17px;
+                                                      height: 17px;
+                                                      position: absolute;
+                                                      top: 39px;
+                                                      left: 383.5px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 30px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -1%;
+                                                      text-align: left;
+                                                      color: rgba(255, 100, 100, 0.7);
+                                                      padding-left: 417px;">02:34</p>
+        </div>
+        <div class="nine-box">
+            <p style="width:50%">UCC Discharge to IP Bed Allotment</p>
+            <p style="font-family: Roboto, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: rgba(153, 153, 153, 1);
+            width: 192px;
+            height: 28px;
+            position: absolute;
+            top: 13px;
+            margin-left: 10px;
+            display: flex;
+            width:60%;">IP Transfers</p>
+            <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 17px;
+                                                      height: 17px;
+                                                      position: absolute;
+                                                      top: 39px;
+                                                      left: 383.5px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 30px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -1%;
+                                                      text-align: left;
+                                                      color: rgba(92, 177, 118, 0.7);
+                                                      padding-left: 417px;">00:34</p>
+            <div class="small-box">
+                <img src="{% static 'img/profile.png' %}" alt="Image">
+                <p>18</p>
+            </div>                                          
+        </div>
+        <div class="ten-box">
+            <div class="divider-line"></div>
+            <div class="text-inside-box">Total Visits</div>
+            <div class="text-inside-box2">Visit Time</div>
+            <div class="whitebox1">
+                <p style="width: 129px;
+              height: 59px;
+              font-family: Roboto,sans-serif;
+              font-size: 50px;
+              font-weight: 700;
+              line-height: 59px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: rgba(255, 100, 100, 1);
+              background: rgba(255, 249, 249, 1);
+              margin: 0;">02:34</p>
+            </div>
+            <p style="width: 114px;
+            height: 12px;
+            top: 23px;
+            left: 330px;
+            font-family: Roboto, sans-serif;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 12px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: white;
+            position: absolute;">Registration to Discharge</p>
+            <div class="smallnumberbox">
+            <p>142</p>
+            </div>
+        </div>
+        <div class="eleven-box">
+            <img src="{% static 'img/umbrella.png' %}" alt="Image" class="eleven-box-image">
+            <p style="width: 62px; height: 16px; margin-top: -4px;margin-left: 20px; font-family: Roboto, sans-serif; font-size: 14px; font-weight: 400; line-height: 16px; letter-spacing: 0em; text-align: left; color: rgba(139, 67, 103, 1);">Insurance</p>
+            <div class="inner-box" style="width: 88px; height: 34px; top: 35px; left: 150px; border-radius: 2px; background: white;"></div>
+            <p>86</p>
+            <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 17px;
+                                                      height: 17px;
+                                                      position: absolute;
+                                                      top: 44px;
+                                                      left: 160px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 18px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: 9%;
+                                                      text-align: left;
+                                                      color: rgba(92, 177, 118, 0.7);
+                                                      padding-left: 175px;">00:34</p>
+        </div>
+        <div class="twelve-box">
+            <img src="{% static 'img/wallet.png' %}" alt="Image" class="twelve-box-image">
+            <p style="position: absolute; width: 79px; height: 16px; margin-top: -4px; left: 33px; font-family: Roboto,sans-serif; font-size: 14px; font-weight: 400; line-height: 16px; letter-spacing: 0em; text-align: left; color: rgba(84, 56, 100, 1);">
+                Self Pay
+            </p>
+            <div class="inner-box" style="width: 88px; height: 34px; top: 35px; left: 150px; border-radius: 2px; background: white;"></div>
+            <p>58</p>
+            <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 17px;
+                                                      height: 17px;
+                                                      position: absolute;
+                                                      top: 44px;
+                                                      left: 160px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 18px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: 9%;
+                                                      text-align: left;
+                                                      color: rgba(255, 100, 100, 0.7);;
+                                                      padding-left: 175px;">02:34</p>
+        </div>
+        <div class="thirteenth-box">
+            <img src="{% static 'img/travel.png' %}" alt="Image" class="thirteenth-box-image">
+            <p style="position: absolute; width: 79px; height: 16px; margin-top: -4px; left: 33px; font-family: Roboto,sans-serif; font-size: 14px; font-weight: 400; line-height: 16px; letter-spacing: 0em; text-align: left; color: navy;">
+                International
+            </p>
+            <div class="inner-box" style="width: 88px; height: 34px; top: 35px; left: 150px; border-radius: 2px; background: white;"></div>
+            <p>78</p>
+            <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 17px;
+                                                      height: 17px;
+                                                      position: absolute;
+                                                      top: 44px;
+                                                      left: 160px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 18px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: 9%;
+                                                      text-align: left;
+                                                      color: rgba(255, 100, 100, 0.7);;
+                                                      padding-left: 175px;">00:34</p>
+        </div>
+        <div class="fourteenth-box">
+            <img src="{% static 'img/placeholder.png' %}" alt="Image" class="fourteenth-box-image">
+            <p style="position: absolute; width: 79px; height: 16px; margin-top: -4px; left: 33px; font-family: Roboto,sans-serif; font-size: 14px; font-weight: 400; line-height: 16px; letter-spacing: 0em; text-align: left; color: rgba(85, 85, 85, 1);">
+                Local
+            </p>
+            <div class="inner-box" style="width: 88px; height: 34px; top: 35px; left: 150px; border-radius: 2px; background: white;"></div>
+            <p>86</p>
+            <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 17px;
+                                                      height: 17px;
+                                                      position: absolute;
+                                                      top: 44px;
+                                                      left: 160px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 18px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: 9%;
+                                                      text-align: left;
+                                                      color: rgba(92, 177, 118, 0.7);
+                                                      padding-left: 175px;">00:34</p>
+        </div>
+        <div class="right-box">
+            <div class="inner-box">
+                <p>Zone Statistics</p>
+            </div>
+            <div class="innerright-box">
+                <p>Green Zone</p>
+            </div>
+            <div class="innerrightred-box">
+                <p>Red Zone</p>
+            </div>
+            <div class="innerrightred1-box">
+                <p style="width: 12px;
+              height: 23px;
+              margin-top: 5px;
+              margin-left: 52px;
+              font-family: Roboto,sans-serif, bold;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 23px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(119, 119, 119, 1);">131</p>
+            </div>
+            <div class="innerrightred2-box">
+                <p style="width: 12px;
+              height: 23px;
+              margin-top: 5px;
+              margin-left: 57px;
+              font-family: Roboto,sans-serif, bold;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 23px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(119, 119, 119, 1);">28</p>
+            </div>
+            <div class="innerrightred3-box">
+                <p style="width: 12px;
+              height: 23px;
+              margin-top: 5px;
+              margin-left: 61px;
+              font-family: Roboto,sans-serif, bold;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 23px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(119, 119, 119, 1);">0</p>
+            </div>
+            <div class="innerrightred4-box">
+                <div class="innerrightred-inside150">
+                    <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 15px;
+                                                      height: 15px;
+                                                      position: absolute;
+                                                      top: 3px;
+                                                      left: 8px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 18px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -8%;
+                                                      text-align: left;
+                                                      color: rgba(255, 100, 100, 1);
+                                                      padding-left: 32px;">02:34</p>
+                </div>
+            </div>
+            <div class="innerrightred5-box">
+                <div class="innerrightred-inside199">
+                    <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 15px;
+                                                      height: 15px;
+                                                      position: absolute;
+                                                      top: 3px;
+                                                      left: 8px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 18px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -8%;
+                                                      text-align: left;
+                                                      color: rgba(92, 177, 118, 0.7);
+                                                      padding-left: 32px;">00:34</p>
+                </div>
+            </div>
+            <div class="innerrightred6-box">
+                <div class="innerrightred-inside200">
+                    <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 15px;
+                                                      height: 15px;
+                                                      position: absolute;
+                                                      top: 3px;
+                                                      left: 8px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 18px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -8%;
+                                                      text-align: left;
+                                                      color: rgba(92, 177, 118, 0.7);
+                                                      padding-left: 32px;">00:34</p>
+                </div>
+            </div>
+            <div class="innerrightred7-box"></div>
+            <div class="innerrightyellow-box">
+                <p>Yellow Zone</p>
+            </div>
+            <div class="innerrightyellow2-box">
+                <p style="width: 12px;
+              height: 23px;
+              margin-top: 5px;
+              margin-left: 62px;
+              font-family: Roboto,sans-serif, bold;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 23px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(119, 119, 119, 1);">18</p>
+            </div>
+            <div class="innerrightyellow3-box">
+                <p style="width: 12px;
+              height: 23px;
+              margin-top: 5px;
+              margin-left: 62px;
+              font-family: Roboto,sans-serif, bold;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 23px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(119, 119, 119, 1);">24</p>
+            </div>
+            <div class="innerrightyellow4-box">
+                <p style="width: 12px;
+              height: 23px;
+              margin-top: 5px;
+              margin-left: 67px;
+              font-family: Roboto,sans-serif, bold;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 23px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(119, 119, 119, 1);">6</p>
+            </div>
+            <div class="innerrightyellow5-box">
+                <div class="innerrightyellow-inside102">
+                    <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 15px;
+                                                      height: 15px;
+                                                      position: absolute;
+                                                      top: 3px;
+                                                      left: 8px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 18px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -8%;
+                                                      text-align: left;
+                                                      color: rgba(255, 100, 100, 1);
+                                                      padding-left: 32px;">02:34</p>
+            </div>
+        </div>
+            <div class="innerrightyellow6-box">
+                <div class="innerrightyellow-inside104">
+                    <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 15px;
+                                                      height: 15px;
+                                                      position: absolute;
+                                                      top: 2px;
+                                                      left: 8px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 18px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -8%;
+                                                      text-align: left;
+                                                      color: rgba(255, 100, 100, 1);
+                                                      padding-left: 32px;">02:34</p>
+                </div>
+            </div>
+            <div class="innerrightyellow7-box">
+                <div class="innerrightyellow-inside106">
+                    <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 15px;
+                                                      height: 15px;
+                                                      position: absolute;
+                                                      top: 2px;
+                                                      left: 8px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 18px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -9%;
+                                                      text-align: left;
+                                                      color: rgba(92, 177, 118, 0.7);
+                                                      padding-left: 32px;">00:34</p>
+                </div>
+            </div>
+            <div class="innerright2-box">
+                <p style="width: 12px;
+              height: 23px;
+              margin-top: 5px;
+              margin-left: 70px;
+              font-family: Roboto,sans-serif, bold;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 23px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(119, 119, 119, 1);">0</p>
+            </div>
+            <div class="innerright3-box">
+                <p style="width: 12px;
+              height: 23px;
+              margin-top: 5px;
+              margin-left: 70px;
+              font-family: Roboto,sans-serif, bold;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 23px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(119, 119, 119, 1);">0</p>
+            </div>
+            <div class="innerright4-box">
+                <p style="width: 12px;
+              height: 23px;
+              margin-top: 5px;
+              margin-left: 70px;
+              font-family: Roboto,sans-serif, bold;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 23px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(119, 119, 119, 1);">0</p>
+            </div>
+            <div class="innerright5-box">
+                <div class="inner-box-inside">
+                    <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 15px;
+                                                      height: 15px;
+                                                      position: absolute;
+                                                      margin-top: 2px;
+                                                      margin-left: 8px;">
+                    <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 18px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -9%;
+                                                      text-align: left;
+                                                      color: rgba(92, 177, 118, 0.7);
+                                                      padding-left: 35px;">00:34</p>
+                </div>
+            </div>
+            <div class="innerright6-box">
+                <div class="inner-box-inside112">
+                    <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 15px;
+                                                      height: 15px;
+                                                      position: absolute;
+                                                      margin-top: 2px;
+                                                      margin-left: 8px;">
+                    <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 18px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -9%;
+                                                      text-align: left;
+                                                      color: rgba(255, 100, 100, 1);
+                                                      padding-left: 35px;">02:34</p>
+                </div>
+            </div>
+            <div class="innerright7-box">
+                <div class="inner-box-inside119">
+                    <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 15px;
+                                                      height: 15px;
+                                                      position: absolute;
+                                                      margin-top: 2px;
+                                                      margin-left: 8px;">
+                    <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 18px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -9%;
+                                                      text-align: left;
+                                                      color: rgba(92, 177, 118, 0.7);
+                                                      padding-left: 35px;">00:34</p>
+                </div>
+            </div>
+            <div class="innerSecond-box">
+                <img src="{% static 'img/multiple-users-silhouette.png' %}" alt="Your Image Description" style="width: 24.66666603088379px;
+                                                                height: 18.5px;
+                                                                margin-top: 8px;
+                                                                margin-left: 8px;
+                                                                ">
+                                                                <p style="width: 200px;
+                                                                height: 21px;
+                                                                margin-top: -21px;
+                                                                margin-left: 250px;
+                                                                font-family: Roboto,sans-serif;
+                                                                font-size: 18px;
+                                                                font-weight: 700;
+                                                                line-height: 21px;
+                                                                letter-spacing: 0em;
+                                                                text-align: left;
+                                                                color: rgb(107, 106, 106);;">Total Visits</p>
+            </div>
+            <div class="inner3-box">
+                <img src="{% static 'img/binary.jpeg' %}" alt="Your Image Description" style="width: 24.66666603088379px;
+                                                                height: 18.5px;
+                                                                margin-top: 8px;
+                                                                margin-left: 8px;
+                                                                ">
+                                                                <p style="width: 200px;
+                                                                height: 21px;
+                                                                margin-top: -21px;
+                                                                margin-left: 290px;
+                                                                font-family: Roboto,sans-serif;
+                                                                font-size: 18px;
+                                                                font-weight: 700;
+                                                                line-height: 21px;
+                                                                letter-spacing: 0em;
+                                                                text-align: left;
+                                                                color: rgb(107, 106, 106);">Active</p>
+            </div>
+            <div class="inner4-box">
+                <img src="{% static 'img/business.png' %}" alt="Your Image Description" style="width: 24.66666603088379px;
+                                                                height: 18.5px;
+                                                                margin-top: 8px;
+                                                                margin-left: 8px;
+                                                                ">
+                                                                <p style="width: 200px;
+                                                                height: 21px;
+                                                                margin-top: -21px;
+                                                                margin-left: 245px;
+                                                                font-family: Roboto,sans-serif;
+                                                                font-size: 18px;
+                                                                font-weight: 700;
+                                                                line-height: 21px;
+                                                                letter-spacing: 0em;
+                                                                text-align: left;
+                                                                color: rgb(107, 106, 106);;">Discharged</p>
+            </div>
+            <div class="inner5-box">
+                <img src="{% static 'img/1-hour.png' %}" alt="Your Image Description" style="width: 24.66666603088379px;
+                                                                height: 18.5px;
+                                                                margin-top: 8px;
+                                                                margin-left: 8px;
+                                                                ">
+                                                                <p style="width: 200px;
+                                                                height: 21px;
+                                                                margin-top: -21px;
+                                                                margin-left: 171px;
+                                                                font-family: Roboto,sans-serif;
+                                                                font-size: 18px;
+                                                                font-weight: 700;
+                                                                line-height: 21px;
+                                                                letter-spacing: 0em;
+                                                                text-align: left;
+                                                                color: rgb(107, 106, 106);;">Average Triage Time</p>
+            </div>
+            <div class="inner6-box">
+                <img src="{% static 'img/deadline.png' %}" alt="Your Image Description" style="width: 24.66666603088379px;
+                                                                height: 18.5px;
+                                                                margin-top: 8px;
+                                                                margin-left: 8px;
+                                                                ">
+                                                                <p style="width: 200px;
+                                                                height: 21px;
+                                                                margin-top: -21px;
+                                                                margin-left: 183px;
+                                                                font-family: Roboto,sans-serif;
+                                                                font-size: 18px;
+                                                                font-weight: 700;
+                                                                line-height: 21px;
+                                                                letter-spacing: 0em;
+                                                                text-align: left;
+                                                                color: rgb(107, 106, 106);;">Average Hold Time</p>
+            </div>
+            <div class="inner7-box">
+                <img src="{% static 'img/timetable.png' %}" alt="Your Image Description" style="width: 24.66666603088379px;
+                                                                height: 18.5px;
+                                                                margin-top: 8px;
+                                                                margin-left: 8px;
+                                                                ">
+                                                                <p style="width: 200px;
+                                                                height: 21px;
+                                                                margin-top: -21px;
+                                                                margin-left: 183px;
+                                                                font-family: Roboto,sans-serif;
+                                                                font-size: 18px;
+                                                                font-weight: 700;
+                                                                line-height: 21px;
+                                                                letter-spacing: 0em;
+                                                                text-align: left;
+                                                                color: rgb(107, 106, 106);;">Average Visit Time</p>
+            </div>
+            <div class="last-box"></div>
+            <div class="triagebyzone"></div>
+            <div class="patientbyinterval"></div>
+            <div class="patientbydoctor"></div>
+            <div class="waitingstatus">
+                <p>Current</p>
+                <p style="width: 255px; height: 28px; top: 15px; left: -30px; font-family: Roboto,sans-serif; font-size: 24px; font-weight: 600; line-height: 28px; letter-spacing: 0em; text-align: center; color: rgba(255, 100, 100, 1); ">Waiting Status</p>
+                <img src="{% static 'img/waiting-room.png' %}" alt="Image" class="waitingstatus">
+            </div>
+            <div class="fortriage">
+                <div style="width: 80.45263671875007px;
+                height: 1px;
+                top: 172px;
+                left: 189px;
+                border: -3px solid rgba(238, 238, 238, 1);
+                transform: rotate(-90deg);
+                transform-origin: top left;
+                background: rgba(238, 238, 238, 1);
+                position: absolute;"></div>
+                <img src="{% static 'img/profile.png' %}" alt="Image"
+         style="width: 34px;
+                height: 34px;
+                top: 119px;
+                left: 28px;
+                padding: 3.0546875px 8.03515625px 3.0546875px 8.03515625px;
+                position: absolute;">
+                <p style="width: 67px;
+              height: 68px;
+              top: 30px;
+              left: 89px;
+              font-family: Roboto,sans-serif, bold;
+              font-size: 68px;
+              font-weight: 700;
+              line-height: 68px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(153, 153, 153, 1);
+              position: absolute;">18</p>
+              <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 20px;
+                                                      height: 20px;
+                                                      position: absolute;
+                                                      margin-top: 130px;
+                                                      margin-left: 208px;">
+                    <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 45px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: 120px;
+                                                      text-align: left;
+                                                      color: rgba(255, 100, 100, 0.7);
+                                                      padding-left: 245px;">02:34</p>
+                <div class="fortriagesmall">
+                    <img src="{% static 'img/doctor-bag.png' %}" alt="Image" style="width: 26px; height: 25.19999885559082px; margin-top: 15.4000015258789062px; margin-left: 15px;">
+                    <p style="font-family: Roboto,sans-serif;
+                        font-size: 19px;
+                        font-weight: 700;
+                        line-height: 19px;
+                        margin-top:-22px;
+                        color: white;
+                        margin-left: -248.05px;
+                        letter-spacing: 0em;
+                        text-align: center;">For</p>
+                        <p style="font-family: Roboto,sans-serif;
+                        font-size: 30px;
+                        font-weight: 700;
+                        line-height: 35px;
+                        margin-top: -49px;
+                        margin-left: -120px;
+                        color: white;
+                        letter-spacing: 0em;
+                        text-align: center;">Triage</p>
+              
+
+                </div>
+            </div>
+            <div class="forconsultation">
+                <div style="width: 80.45263671875007px;
+                height: 1px;
+                top: 172px;
+                left: 189px;
+                border: -3px solid rgba(238, 238, 238, 1);
+                transform: rotate(-90deg);
+                transform-origin: top left;
+                background: rgba(238, 238, 238, 1);
+                position: absolute;"></div>
+                <img src="{% static 'img/profile.png' %}" alt="Image"
+         style="width: 34px;
+                height: 34px;
+                top: 119px;
+                left: 28px;
+                padding: 3.0546875px 8.03515625px 3.0546875px 8.03515625px;
+                position: absolute;">
+                <p style="width: 67px;
+              height: 68px;
+              top: 30px;
+              left: 89px;
+              font-family: Roboto,sans-serif, bold;
+              font-size: 68px;
+              font-weight: 700;
+              line-height: 68px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(153, 153, 153, 1);
+              position: absolute;">28</p>
+              <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 20px;
+                                                      height: 20px;
+                                                      position: absolute;
+                                                      margin-top: 130px;
+                                                      margin-left: 208px;">
+                    <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 45px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: 120px;
+                                                      text-align: left;
+                                                      color: rgba(92, 177, 118, 0.7);
+                                                      padding-left: 245px;">00:34</p>
+                <div class="forconsultationsmall">
+                    <img src="{% static 'img/doctor.png' %}" alt="Image" style="width: 26px; height: 25.19999885559082px; margin-top: 15.4000015258789062px; margin-left: 15px;">
+                    <p style="font-family: Roboto,sans-serif;
+                        font-size: 19px;
+                        font-weight: 700;
+                        line-height: 19px;
+                        margin-top:-22px;
+                        color: white;
+                        margin-left: -248.05px;
+                        letter-spacing: 0em;
+                        text-align: center;">For</p>
+                        <p style="font-family: Roboto,sans-serif;
+                        font-size: 30px;
+                        font-weight: 700;
+                        line-height: 35px;
+                        margin-top: -49px;
+                        margin-left: -16px;
+                        color: white;
+                        letter-spacing: 0em;
+                        text-align: center;">Consultation</p>
+                </div>
+            </div>
+            <div class="doctorstatics">
+                <div class="custom-box" style="width: 665px;
+                                   height: 38px;
+                                   margin-top: 130px;
+                                   margin-left: 12px;
+                                   border-radius: 10px;
+                                   background: rgba(248, 248, 255, 1);">
+                                   <p class="custom-text"
+                                   style="width: 66px;
+                                          height: 26px;
+                                          top: 115px;
+                                          left: 45px;
+                                          font-family: Roboto,sans-serif;
+                                          font-size: 22px;
+                                          font-weight: 700;
+                                          line-height: 26px;
+                                          letter-spacing: 0em;
+                                          text-align: left;
+                                          color: rgba(85, 85, 85, 1);
+                                          position: absolute;">
+                                    Doctor
+                                </p>
+                                <p style="width: 83px;
+                      height: 26px;
+                      top: 115px;
+                      left: 300px;
+                      font-family: Roboto,sans-serif;
+                      font-size: 22px;
+                      font-weight: 700;
+                      line-height: 26px;
+                      letter-spacing: 0em;
+                      text-align: left;
+                      color: rgba(85, 85, 85, 1);
+                      position: absolute;">Patients
+            </p>
+            <p style="width: 83px;
+                      height: 26px;
+                      top: 115px;
+                      left: 590px;
+                      font-family: Roboto,sans-serif;
+                      font-size: 22px;
+                      font-weight: 700;
+                      line-height: 26px;
+                      letter-spacing: 0em;
+                      text-align: left;
+                      color: rgba(85, 85, 85, 1);
+                      position: absolute;">Time
+            </p>
+            <div class="custom-box1"
+           style="width: 663px;
+                  height: 41.3521842956543px;
+                  margin-top: 45px;
+                  margin-left: 1px;
+                  border-radius: 10px;
+                  border: 1px solid rgba(221, 221, 221, 1);
+                  background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                  position: absolute;">
+            <p style="width: 190px;
+            height: 21px;
+            margin-top: 8px;
+            margin-left: 30px;
+            font-family: Roboto,sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(85, 85, 85, 1);
+            position: absolute;">
+      Dr. Alkmal El Swami
+            </p>      
+            <div class="custom-boxinside1"
+           style="width: 23px; /* Change width accordingly */
+                  height: 27px; /* Change height accordingly */
+                  top: 5px;
+                  left: 287px;
+                  padding: 2px 30px;
+                  border-radius: 2px;
+                  gap: 10px;
+                  background: rgba(238, 238, 238, 1);
+                  position: absolute;">
+                  <p class="box-content22"
+                  style="width: 23px;
+                         height: 23px;
+                         font-family: Roboto,sans-serif;
+                         font-size: 20px;
+                         font-weight: 700;
+                         margin-top: 1px;
+                         line-height: 23px;
+                         letter-spacing: 0em;
+                         text-align: center;
+                         color: rgba(85, 85, 85, 1);
+                         position: absolute;">
+                   32
+               </p>
+               <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 15px;
+                                                      height: 15px;
+                                                      position: absolute;
+                                                      top: 9px;
+                                                      left: 270px;">
+                                                      <p style="font-family: Roboto,sans-serif;
+                                                      font-size: 24px;
+                                                      font-weight: 700;
+                                                      line-height: 35px;
+                                                      letter-spacing: 0em;
+                                                      margin-top: -8%;
+                                                      text-align: left;
+                                                      color: rgba(92, 177, 118, 0.7);
+                                                      padding-left: 259px;">00:34</p>
+        </div>
+        </div>
+        <div class="custom-box2"
+           style="width: 663px;
+                  height: 41.3521842956543px;
+                  margin-top: 95px;
+                  margin-left: 1px;
+                  border-radius: 10px;
+                  border: 1px solid rgba(221, 221, 221, 1);
+                  background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                  position: absolute;">
+                  <p style="width: 190px;
+            height: 21px;
+            margin-top: 8px;
+            margin-left: 30px;
+            font-family: Roboto,sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(85, 85, 85, 1);
+            position: absolute;">
+      Dr.Ehab Adeb
+            </p> 
+            <div class="custom-boxinside3"
+            style="width: 23px; /* Change width accordingly */
+                   height: 27px; /* Change height accordingly */
+                   top: 5px;
+                   left: 287px;
+                   padding: 2px 30px;
+                   border-radius: 2px;
+                   gap: 10px;
+                   background: rgba(238, 238, 238, 1);
+                   position: absolute;">
+                   <p class="box-content22"
+                   style="width: 23px;
+                          height: 23px;
+                          font-family: Roboto,sans-serif;
+                          font-size: 20px;
+                          font-weight: 700;
+                          margin-top: 1px;
+                          line-height: 23px;
+                          letter-spacing: 0em;
+                          text-align: center;
+                          color: rgba(85, 85, 85, 1);
+                          position: absolute;">
+                    32
+                </p>
+            </p>
+            <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 15px;
+                                                   height: 15px;
+                                                   position: absolute;
+                                                   top: 9px;
+                                                   left: 270px;">
+                                                   <p style="font-family: Roboto,sans-serif;
+                                                   font-size: 24px;
+                                                   font-weight: 700;
+                                                   line-height: 35px;
+                                                   letter-spacing: 0em;
+                                                   margin-top: -73%;
+                                                   text-align: left;
+                                                   color: rgba(255, 100, 100, 0.7);
+                                                   padding-left: 259px;">02:34</p>
+            </div>   
+        </div>
+        <div class="custom-box3"
+           style="width: 663px;
+                  height: 41.3521842956543px;
+                  margin-top: 145px;
+                  margin-left: 1px;
+                  border-radius: 10px;
+                  border: 1px solid rgba(221, 221, 221, 1);
+                  background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                  position: absolute;">
+                  <p style="width: 190px;
+            height: 21px;
+            margin-top: 8px;
+            margin-left: 30px;
+            font-family: Roboto,sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(85, 85, 85, 1);
+            position: absolute;">
+            Dr. Alkmal El Swami
+            </p> 
+            <div class="custom-boxinside3"
+            style="width: 23px; /* Change width accordingly */
+                   height: 27px; /* Change height accordingly */
+                   top: 5px;
+                   left: 287px;
+                   padding: 2px 30px;
+                   border-radius: 2px;
+                   gap: 10px;
+                   background: rgba(238, 238, 238, 1);
+                   position: absolute;">
+                   <p class="box-content22"
+                   style="width: 23px;
+                          height: 23px;
+                          font-family: Roboto,sans-serif;
+                          font-size: 20px;
+                          font-weight: 700;
+                          margin-top: 1px;
+                          line-height: 23px;
+                          letter-spacing: 0em;
+                          text-align: center;
+                          color: rgba(85, 85, 85, 1);
+                          position: absolute;">
+                    32
+                </p>
+                <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 15px;
+                                                   height: 15px;
+                                                   position: absolute;
+                                                   top: 9px;
+                                                   left: 270px;">
+                                                   <p style="font-family: Roboto,sans-serif;
+                                                   font-size: 24px;
+                                                   font-weight: 700;
+                                                   line-height: 35px;
+                                                   letter-spacing: 0em;
+                                                   margin-top: -11%;
+                                                   text-align: left;
+                                                   color: rgba(92, 177, 118, 0.7);
+                                                   padding-left: 259px;">00:34</p>
+            </div>
+        </div>
+        <div class="custom-box4"
+           style="width: 663px;
+                  height: 41.3521842956543px;
+                  margin-top: 197px;
+                  margin-left: 1px;
+                  border-radius: 10px;
+                  border: 1px solid rgba(221, 221, 221, 1);
+                  background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                  position: absolute;">
+                  <p style="width: 190px;
+            height: 21px;
+            margin-top: 8px;
+            margin-left: 30px;
+            font-family: Roboto,sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(85, 85, 85, 1);
+            position: absolute;">
+      Dr.Ehab Adeb
+            </p> 
+            <div class="custom-boxinside3"
+            style="width: 23px; /* Change width accordingly */
+                   height: 27px; /* Change height accordingly */
+                   top: 5px;
+                   left: 287px;
+                   padding: 2px 30px;
+                   border-radius: 2px;
+                   gap: 10px;
+                   background: rgba(238, 238, 238, 1);
+                   position: absolute;">
+                   <p class="box-content22"
+                   style="width: 23px;
+                          height: 23px;
+                          font-family: Roboto,sans-serif;
+                          font-size: 20px;
+                          font-weight: 700;
+                          margin-top: 1px;
+                          line-height: 23px;
+                          letter-spacing: 0em;
+                          text-align: center;
+                          color: rgba(85, 85, 85, 1);
+                          position: absolute;">
+                    32
+                </p>
+                <img src="{% static 'img/wall-clock.png' %}" alt="Icon" style="width: 15px;
+                                                   height: 15px;
+                                                   position: absolute;
+                                                   top: 9px;
+                                                   left: 270px;">
+                                                   <p style="font-family: Roboto,sans-serif;
+                                                   font-size: 24px;
+                                                   font-weight: 700;
+                                                   line-height: 35px;
+                                                   letter-spacing: 0em;
+                                                   margin-top: -11%;
+                                                   text-align: left;
+                                                   color: rgba(255, 100, 100, 0.7);
+                                                   padding-left: 259px;">02:34</p>
+            </div>
+            <div class="custom-box6"
+             style="width: 372px;
+                    height: 40px;
+                    top: 49px;
+                    left: 288px;
+                    border-radius: 4px;
+                    border: 0.4px solid rgba(0, 0, 0, 0.1);
+                    background: linear-gradient(0deg, #F8F8FF, #F8F8FF),
+                                linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+                    position: absolute;">
+                    <img src="{% static 'img/left-chevron.png' %}" alt="Image" 
+                    style="width: 20px; height: 20px;
+                           top: 8px; 
+                           left: 15px;
+                           border: 0.1px solid rgba(0, 0, 0, 0.1);
+                           position: absolute;">
+                           <p style="width: 8px;
+                      height: 16px;
+                      top: -4px;
+                      left: 77px;
+                      font-family: Roboto,sans-serif;
+                      font-size: 17px;
+                      font-weight: 400;
+                      line-height: 16px;
+                      letter-spacing: 0em;
+                      text-align: left;
+                      position: absolute;">1
+            </p>
+            <div class="custom-box9"
+                 style="width: 18px;
+                        height: 18px;
+                        top: 3.5px;
+                        left: 118px;
+                        padding: 6px 10px;
+                        border-radius: 4px;
+                        background: linear-gradient(0deg, #676795, #676795),
+                                    linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+                        border: 0.4px solid rgba(0, 0, 0, 0.1);
+                        position: absolute;">
+                        <p style="width: 8px;
+                        height: 16px;
+                        font-family: Roboto,sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 16px;
+                        margin-top: 2px;
+                        margin-left: 4px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: white;
+                        position: absolute;">2
+              </p>
+              <img src="{% static 'img/next.png' %}" alt="Image" 
+                    style="width: 20px; height: 20px;
+                           top: 4px; 
+                           left: 210px;
+                           border: 0.1px solid rgba(0, 0, 0, 0.1);
+                           position: absolute;">
+                        
+            </div>
+            <p style="width: 8px;
+                      height: 16px;
+                      top: -4px;
+                      left: 190px;
+                      font-family: Roboto,sans-serif;
+                      font-size: 17px;
+                      font-weight: 400;
+                      line-height: 16px;
+                      letter-spacing: 0em;
+                      text-align: left;
+                      position: absolute;">3
+            </p>
+            <p style="width: 8px;
+                      height: 16px;
+                      top: -4px;
+                      left: 227px;
+                      font-family: Roboto,sans-serif;
+                      font-size: 17px;
+                      font-weight: 400;
+                      line-height: 16px;
+                      letter-spacing: 0em;
+                      text-align: left;
+                      position: absolute;">...
+            </p>
+            <p style="width: 8px;
+                      height: 16px;
+                      top: -4px;
+                      left: 275px;
+                      font-family: Roboto,sans-serif;
+                      font-size: 17px;
+                      font-weight: 400;
+                      line-height: 16px;
+                      letter-spacing: 0em;
+                      text-align: left;
+                      position: absolute;">12
+            </p>
+            
+        </div>
+        </div>
+                <div class="doctorstaticssmall">
+                    <img src="{% static 'img/profile.png' %}" alt="Image"
+         style="width: 25.65625px;
+                height: 25.6875px;
+                top: 46px;
+                left: 25px;
+                position: absolute;">
+                <p style="width: 250px;
+              height: 38px;
+              top: 5px;
+              left: 70px;
+              font-family: Roboto;
+              font-size: 35px;
+              font-weight: 700;
+              line-height: 38px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: white;
+              position: absolute;">Doctor Statistics</p>
+              <div class="searchbox">
+                <img src="{% static 'img/search.png' %}" alt="Search Icon" style="width: 16px;
+                                                            height: 16px;
+                                                            margin-top: 8px;
+                                                            margin-left: 12px;
+                                                            padding: 0.9874992370605469px 1.2799999713897705px;">
+                                                            <p style="width: 99px;
+              height: 16px;
+              margin-top: -22px;
+              margin-left: 48px;
+              font-family: Roboto;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 16px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: rgba(119, 119, 119, 1);">
+        Search here...
+    </p>
+              </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="{% static 'js/management.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

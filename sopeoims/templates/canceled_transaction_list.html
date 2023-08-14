@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canceled Transactions</title>
+</head>
+<body>
+    <h1>Canceled Transactions</h1>
+    <ul>
+        {% for transaction in canceled_transactions %}
+            <li>{{ transaction.IName }} - {{ transaction.Order }} - {{ transaction.Date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
